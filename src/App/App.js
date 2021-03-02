@@ -14,12 +14,21 @@ export default class App extends Component {
     }
   }
 
-  addCourse = () => {
-    console.log('add')
+  addCourse = (event) => {
+    const thiscourseId = event.target.closest('article').id
+    const thisCourse = this.state.courses.find(course => {
+      return course.id === thiscourseId
+    })
+
+    if (!this.state.student.courses.includes(thisCourse)) {
+      const updatedStudent = this.state.student
+      updatedStudent.courses.push(thisCourse)
+      this.setState({ student: updatedStudent })
+    }
   }
 
   removeCourse = () => {
-    console.log('remove');
+    console.log('remove')
   }
 
   componentDidMount = () => {
