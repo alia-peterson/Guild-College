@@ -1,0 +1,9 @@
+.App {
+  background-color: #f2e9e4;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,21 @@
+.course-card {
+  background-color: #9a8c98;
+  border: 1px solid #9a8c98;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding-bottom: 1rem;
+  width: 300px;
+}
+
+.button-course {
+  background-color: #22223b;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.button-course:hover {
+  cursor: pointer;
+}
