@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Header from '../Header/Header'
 import Courses from '../Courses/Courses'
 import StudentInfo from '../StudentInfo/StudentInfo'
 import allCourses from '../data/course-data'
@@ -45,7 +46,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h1>Guild University</h1>
+        <Header />
         <div className='main'>
           <StudentInfo
             student={this.state.student}
