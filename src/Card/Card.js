@@ -1,13 +1,13 @@
 import React from 'react'
 import './Card.css'
 
-export default function Card({ id, name, time, addCourse }) {
+export default function Card({ id, name, time, addRemoveCourse }) {
   return (
-    <section className='course-card'>
+    <article className='course-card' id={id}>
       <h3>Course Name: {name}</h3>
       <p>Course ID: {id}</p>
       <p>Time: {time}</p>
-      <button onClick={addCourse}>Add Class</button>
-    </section>
+      <button onClick={addRemoveCourse}>Add Class</button>
+    </article>
   )
 }

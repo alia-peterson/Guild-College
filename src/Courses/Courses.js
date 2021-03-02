@@ -9,7 +9,7 @@ export default function Courses({ courses, addCourse }) {
       id={course.id}
       name={course.name}
       time={course.time}
-      addCourse={addCourse}
+      addRemoveCourse={addCourse}
       />
   })
 
