@@ -13,7 +13,7 @@ export default function StudentInfo({ student, removeCourse }) {
         name={course.name}
         time={course.time}
         addRemoveCourse={removeCourse}
-        buttonText='Remove Course'
+        buttonText='Cancel Course Registration'
         />
     })
   } else {

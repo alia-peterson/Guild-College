@@ -40,6 +40,7 @@ export default class App extends Component {
   }
 
   componentDidMount = () => {
+    // fetch requests would go here if the data was coming from an API
     this.setState({ courses: allCourses, student: currentStudent })
   }
 
