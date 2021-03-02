@@ -18,6 +18,7 @@ Clone this repository to your local machine
 
 In this project directory, run:
 
+`npm install` 
 `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view the application in the browser.
