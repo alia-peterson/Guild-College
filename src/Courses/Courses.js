@@ -2,13 +2,14 @@ import React from 'react'
 import Card from '../Card/Card'
 import './Courses.css'
 
-export default function Courses({ courses }) {
+export default function Courses({ courses, addCourse }) {
   const allCourses = courses.map(course => {
     return <Card
       key={course.id}
       id={course.id}
       name={course.name}
       time={course.time}
+      addCourse={addCourse}
       />
   })
 

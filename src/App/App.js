@@ -14,6 +14,14 @@ export default class App extends Component {
     }
   }
 
+  addCourse = () => {
+    console.log('add')
+  }
+
+  removeCourse = () => {
+    console.log('remove');
+  }
+
   componentDidMount = () => {
     this.setState({ courses: allCourses, student: currentStudent })
   }
@@ -25,9 +33,11 @@ export default class App extends Component {
         <div className='main'>
           <StudentInfo
             student={this.state.student}
+            removeCourse={this.removeCourse}
             />
           <Courses
             courses={this.state.courses}
+            addCourse={this.addCourse}
             />
         </div>
       </div>

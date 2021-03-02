@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function StudentInfo({ student }) {
-  const { id, name, email } = student
+export default function StudentInfo({ student, removeCourse }) {
+  const { id, name, email, courses } = student
 
   return (
     <section>
@@ -9,6 +9,7 @@ export default function StudentInfo({ student }) {
       <p>Name: {name}</p>
       <p>Student ID: {id}</p>
       <p>Email: {email}</p>
+      <h2>My Courses: </h2>
     </section>
   )
 }
