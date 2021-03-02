@@ -15,9 +15,9 @@ export default class App extends Component {
   }
 
   addCourse = (event) => {
-    const thiscourseId = event.target.closest('article').id
+    const thisCourseId = event.target.closest('article').id
     const thisCourse = this.state.courses.find(course => {
-      return course.id === thiscourseId
+      return course.id === thisCourseId
     })
 
     if (!this.state.student.courses.includes(thisCourse)) {
@@ -27,8 +27,15 @@ export default class App extends Component {
     }
   }
 
-  removeCourse = () => {
-    console.log('remove')
+  removeCourse = (event) => {
+    const thisCourseId = event.target.closest('article').id
+    const updatedCourses = this.state.student.courses.filter(course => {
+      return course.id !== thisCourseId
+    })
+
+    const updatedStudent = this.state.student
+    updatedStudent.courses = updatedCourses
+    this.setState({ student: updatedStudent })
   }
 
   componentDidMount = () => {

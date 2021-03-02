@@ -10,6 +10,7 @@ export default function Courses({ courses, addCourse }) {
       name={course.name}
       time={course.time}
       addRemoveCourse={addCourse}
+      buttonText='Add Course'
       />
   })
 

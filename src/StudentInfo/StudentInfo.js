@@ -5,7 +5,7 @@ export default function StudentInfo({ student, removeCourse }) {
   const { id, name, email, courses } = student
   let studentCourses
 
-  if (courses) {
+  if (courses && courses.length > 0) {
     studentCourses = courses.map(course => {
       return <Card
         key={course.id}
@@ -13,6 +13,7 @@ export default function StudentInfo({ student, removeCourse }) {
         name={course.name}
         time={course.time}
         addRemoveCourse={removeCourse}
+        buttonText='Remove Course'
         />
     })
   } else {
